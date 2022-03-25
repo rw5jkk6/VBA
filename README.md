@@ -27,3 +27,25 @@ Sub ForCell()
 　　Next i
 End Sub
 ```
+- for文のネスト
+```vba
+Sub ForNesuto()
+    Dim i As Integer, j As Integer
+    For i = 1 To 3
+        For j = 1 To 2
+        Cells(i,j).Value = i * j
+        Next
+    Next
+End Sub
+```
+- 掛け算
+```vba
+Sub Kakeru()
+    Dim i As Integer
+    i = 1
+    Do While Cells(i, "B").Value <> ""
+        Cells(i, "C").Value = Cells(i, "A").Value * Cells(i,"B").Value
+        i = i + 1
+    Loop
+End Sub
+```
