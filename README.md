@@ -61,18 +61,18 @@ Sub SUMCOLLUMA()
     Cells(i, "A").Value = cnt
 End Sub
 ```
-- J9の数字を以下のように判定する
-    - 0< 50　　Bad 
-    - 50 < 80 normal 
-    - 80 < 100 Good
+- A1の数字を以下のように判定する
+    - 0 < 5　　Bad 
+    - 5 < 8 normal 
+    - 8 < 100 Good
 ```vba
-Sub J9Hantei()
-    If Range("J9").Value < 50 Then
-        Range("J10").Value = "Bad"
-    ElseIf Range("J9").Value < 80 Then
-        Range("J10").Value = "normal"
+Sub A1Hantei()
+    If Range("A1").Value < 5 Then
+        Range("A2").Value = "Bad"
+    ElseIf Range("A1").Value < 8 Then
+        Range("A2").Value = "normal"
     Else
-        Range("J10").Value = "Good"
+        Range("A2").Value = "Good"
     End If
 End Sub
 ```
