@@ -76,3 +76,30 @@ Sub A1Hantei()
     End If
 End Sub
 ```
+- if and for
+```vba
+Sub ForIf()
+    Dim i As Integer
+    For i = 1 To 9
+        Cells(i, "A") = i
+        If i Mod 2 = 0 Then
+            Cells(i, "B") = "Even"
+        Else
+            Cells(i, "B") = "odd"
+        End If
+    Next
+End Sub
+```
+- offset
+```vba
+Sub DataOffset()
+' A１レンジの後にデータを入力する
+    Range("A1") = 1
+    With Range("A2")
+        .Value = .Offset(-1, 0).Value + 1
+        .Offset(0,1).Value = "Hitoshi"
+        .Offset(0,2).Value = 3
+        .Offset(0,3).Value = 5
+    End With
+End Sub
+```
