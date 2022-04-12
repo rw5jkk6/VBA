@@ -103,3 +103,31 @@ Sub DataOffset()
     End With
 End Sub
 ```
+- Block
+```vba
+Sub block()
+    With Range("B5")
+        .Offset(0,0).Interior.Color = RGB(0,0,255)
+        .Offset(0,1).Interior.Color = RGB(0,0,255)
+        .Offset(1,1).Interior.Color = RGB(0,0,255)
+        .Offset(1,2).Interior.Color = RGB(0,0,255)
+    End With
+End Sub
+```
+- 行と列を正方形にする
+```vba
+Sub Gyouretu_line()
+    With Range("A1:U20")
+        .ColumnWidth = 5
+        .RowHeight = 30
+    End With
+End Sub
+```
+- 配列
+```vba
+Sub Hairetu()
+    Dim name As Variant
+    name = Array("hitoshi", "serina", "rui")
+    Range("A1:C1").Value = name
+End Sub
+```
