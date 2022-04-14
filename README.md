@@ -131,3 +131,17 @@ Sub Hairetu()
     Range("A1:C1").Value = name
 End Sub
 ```
+- 日付と時間
+```vba
+Sub DateTime()
+    Range("A1")=Date
+    Range("A2")=Time
+End Sub
+```
+- 最終行のアクティベート
+  - 事前にA列に1~1000まで出力する
+  - ```vba
+    Sub EndActivate()
+        Range("A1").End(xlDown).Activate
+    End Sub
+    ```  
