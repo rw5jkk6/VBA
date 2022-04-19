@@ -9,4 +9,5 @@ Sub SumColumn()
     i = i + 1
   Loop
   Range("B1").Value = cnt
+End Sub
 ```
