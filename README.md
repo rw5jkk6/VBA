@@ -123,14 +123,6 @@ Sub Gyouretu_line()
     End With
 End Sub
 ```
-- 配列
-```vba
-Sub Hairetu()
-    Dim name As Variant
-    name = Array("hitoshi", "serina", "rui")
-    Range("A1:C1").Value = name
-End Sub
-```
 - 日付と時間
 ```vba
 Sub DateTime()
