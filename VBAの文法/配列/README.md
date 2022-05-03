@@ -19,3 +19,17 @@ Sub StringSplit()
   Next
 End Sub
 ```
+## おみくじ
+```vba
+Sub Omikuji()
+    Dim card(3) As String
+    Dim a As Integer
+    card(1)="大吉"
+    card(2)="中吉"
+    card(3)="小吉"
+    
+    Randomize
+    a = Int(Rnd * 3) + 1
+    MsgBox "あなたの今日の運勢は" & card(a) & "です"
+End Sub
+```
