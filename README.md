@@ -6,29 +6,7 @@
 5. バーの緑右矢印を押す
 6. 閉じる　確認して保存
 ## code
-- Helloを出力
-```vba
-Sub Hello()
-　　Range("A1") = "Hello"
-End Sub
-```
-- clear
-```vba
-Sub Clear()
-    Cells(2,1).Clear
-End Sub
-```
-- 文字の連結
-    - A1 に nakayaと入力
-    - B1　に  serinaと入力
-```vba
-Sub Mjinorenketu()
-    Dim name As String, miyoji As String
-    miyoji = Range("A1").Value
-    name = Range("B1").Value
-    Range("C1").Value = miyoji & " " & name
-End Sub
-```
+
 - for文
 ```vba
 Sub ForCell()
