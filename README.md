@@ -5,21 +5,19 @@
 4. codeを書く
 5. バーの緑右矢印を押す
 6. 閉じる　確認して保存
+
+## excelの拡張子
+|名前|拡張子|
+|:-:|:-:|
+|excelブック|xlsx|
+|excelマクロ有効ブック|xlsm|
+## 組み込み定数のhelp
+- 調べたい組み込み定数にカーネルを持っていき、F1キーを押す
+- 例 `Rnd`,`MsgBox` を調べてみる
 ## code
 
 
-- 上の九九のA列の合計を一番下に表示する
-```vba
-Sub SUMCOLLUMA()
-    Dim i As Integer, j As Integer
-    i = 1
-    Do Until Cells(i, "A").Value = ""
-        cnt = Cells(i,"A").Value + cnt
-        i = i + 1
-    Loop
-    Cells(i, "A").Value = cnt
-End Sub
-```
+
 
 - offset
 ```vba
